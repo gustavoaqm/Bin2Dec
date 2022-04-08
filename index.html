@@ -6,49 +6,15 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Binário para Decimal</title>
 </head>
 <body>
-	<style type="text/css">
-		*{
-			color: white;
-			background-color: #474747;
-			font-family: 'Jura', sans-serif;
-		}
-
-		.inputBinario{
-			color: #474747;
-			font-size: 1.2rem;
-			padding: 1.5rem 2rem;
-		  	border-radius: 0.3rem;
-			background-color: rgb(255, 255, 255);
-			border: none;
-		}
-	</style>
-
-	<center>
-		<h1> Binário para Decimal </h1> 
-    	<input type="text" class="inputBinario" id="numBinario" maxlength="8"><br>
-    	<div id="resultado"></div>
-	</center>	
-
-	<script type="text/javascript">
-		var binario = document.getElementById('numBinario');
-		var result = document.getElementById('resultado');
-
-		binario.addEventListener('keyup', calcular);
-		function calcular()
-		{
-		    var dec = parseInt(binario.value, 2);
-
-		    if (binario.value == "" || !/^[01]+$/.test(binario.value)) {
-		    	result.innerHTML = "<h2> Insira um número binário </h2>";
-		    }
-		    else{
-				console.log(dec);
-	    		result.innerHTML = "<h2> Resultado: " + dec + "</h2>";
-		    }
-		}
-	</script>
+<center>
+	<h1> Binário para Decimal </h1> 
+	<input type="text" class="inputBinario" id="numBinario" maxlength="8"><br>
+	<div id="resultado"></div>
+</center>	
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
